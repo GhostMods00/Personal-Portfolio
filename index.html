@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #101010;
+      color: #39ff14;
+    }
+
+    /* Background image for the hero section */
+    #hero {
+      background: url('https://img.freepik.com/free-vector/gradient-technology-symbols-background_23-2149110134.jpg?t=st=1728145638~exp=1728149238~hmac=1c3aae80ce4de75cf345a48ad183c317579f8ae8013de02b7c03919820f1510e&w=1380') no-repeat center center/cover;
+    }
+
+    .neon-border {
+      border: 2px solid #39ff14;
+    }
+
+    .neon-text {
+      color: #39ff14;
+    }
+
+    .blue-neon {
+      color: rgb(242, 255, 255);
+    }
+
+    .glitch {
+      animation: glitch 1.5s infinite;
+    }
+
+    .flicker {
+      animation: flicker 1.5s infinite;
+    }
+
+    /* Custom hover effects */
+    .neon-hover:hover {
+      background-color: #0ff;
+      color: #000;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Responsive typography */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lb navbar-dark bg-dark py4">
+    <div class="container-fluid">
+      <a class="navbar-brand neon-text glitch" href="#">Waleed Zaryab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light neon-hover" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light neon-hover" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light neon-hover" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section id="hero" class="d-flex align-items-center justify-content-center vh-100 text-center">
+    <div class="container">
+      <h1 class="display-3 neon-text glitch">Welcome to my Portfolio</h1>
+      <p class="lead blue-neon flicker">Web Developer & Designer</p>
+      <a href="#projects" class="btn btn-outline-light neon-hover mt-4">View Projects</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-dark text-center">
+    <div class="container">
+      <h2 class="neon-text glitch">About Me</h2>
+      <p class="blue-neon flicker mt-3">I am a web developer with a passion for futuristic and cyber designs.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section with Images -->
+  <section id="projects" class="py-5 bg-dark text-center">
+    <div class="container">
+      <h2 class="neon-text glitch">My Projects</h2>
+      <div class="row mt-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card neon-border text-center bg-dark text-light">
+            <img src="https://img.freepik.com/free-photo/cyber-security-experts-working-with-tech-devices-neon-lights_23-2151645651.jpg?t=st=1728145979~exp=1728149579~hmac=1bcb6cd2a997338d25095b10be7a0566b4f505928698ab07362a250f207b3712&w=740" class="card-img-top" alt="Cyber App">
+            <div class="card-body">
+              <h3 class="card-title neon-text">Cyber App</h3>
+              <p class="card-text blue-neon">A futuristic web application built using cutting-edge technologies.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card neon-border text-center bg-dark text-light">
+            <img src="https://img.freepik.com/free-photo/cyber-security-expert-working-with-technology-neon-lights_23-2151645691.jpg?t=st=1728146044~exp=1728149644~hmac=dec505532e0604b27fa134b2b03b5a7999033161e22b5a17ff4710fbb2ba25da&w=740" class="card-img-top" alt="Sci-Fi Dashboard">
+            <div class="card-body">
+              <h3 class="card-title neon-text">Sci-Fi Dashboard</h3>
+              <p class="card-text blue-neon">A pixel-perfect dashboard with a cyberpunk theme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-center">
+    <div class="container">
+      <h2 class="neon-text glitch">Get In Touch</h2>
+      <p class="blue-neon flicker mt-3">Feel free to contact me for freelance work or collaborations!</p>
+      <a href="westendcrew1982@gmail.com" class="btn btn-outline-light neon-hover mt-4">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-center">
+    <div class="container">
+      <p class="text-light">© 2024 Waleed Zaryab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
