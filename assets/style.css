@@ -1,0 +1,51 @@
+@keyframes glitch {
+    0% {
+      transform: translate(0);
+      clip-path: inset(0% 0 0 0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+      clip-path: inset(10% 0 50% 0);
+      color: #0ff; /* change color to blue */
+    }
+    40% {
+      transform: translate(3px, -3px);
+      clip-path: inset(0 20% 30% 0);
+      color: #ff00ff; /* magenta */
+    }
+    60% {
+      transform: translate(-3px, 2px);
+      clip-path: inset(30% 10% 10% 10%);
+      color: #39ff14; /* back to neon green */
+    }
+    80% {
+      transform: translate(2px, -2px);
+      clip-path: inset(10% 0 40% 0);
+      color: #0ff;
+    }
+    100% {
+      transform: translate(0);
+      clip-path: inset(0);
+      color: #39ff14;
+    }
+  }
+
+  background:url('https://example.com/cyber-background.jpg') no-repeat center center/cover 
+
+    .glitch {
+        font-size: 3em;
+        font-weight: bold;
+        color: #39ff14;
+        text-transform: uppercase;
+        animation: glitch 1s infinite;
+    }
+
+    #hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+      }
